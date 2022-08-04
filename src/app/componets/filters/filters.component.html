@@ -1,0 +1,20 @@
+<form [formGroup]="form">
+  <mat-form-field appearance="fill">
+    <mat-label>Breed</mat-label>
+    <mat-select formControlName="breed">
+      <mat-option value="all">All</mat-option>
+      <mat-option *ngFor="let breed of breeds" [value]="breed.id">
+        {{breed.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Limit</mat-label>
+    <mat-select formControlName="limit">
+      <mat-option *ngFor="let limit of [5, 10, 25, 50, 100]" [value]="limit">
+        {{limit}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>

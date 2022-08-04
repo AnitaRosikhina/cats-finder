@@ -1,0 +1,25 @@
+.mat-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .mat-list-item {
+    height: 200px !important;
+    width: auto;
+    margin: 20px;
+
+    .container {
+      width: 200px;
+      height: 200px;
+      background-size: cover;
+    }
+
+
+    //img {
+    //  height: 100%;
+    //  object-fit: cover;
+    //}
+  }
+}
+
+

@@ -1,0 +1,7 @@
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let item of items">
+    <div class="container"
+         [style.background-image]="'url(' + item.url + ')'"
+    ></div>
+  </mat-list-item>
+</mat-list>
